@@ -87,15 +87,39 @@
 
 
 
-<meta name="description" content="永远相信美好的事情即将发生">
-<meta property="og:type" content="website">
-<meta property="og:title" content="堆栈">
-<meta property="og:url" content="http://iiccc.cc/index.html">
+<meta name="description" content="问题：编写Python时，尝试使用中文字符出现：
+SyntaxError: Non-ASCII character ‘\xe5′ in file
+原因是Python的默认编码文件是用的ASCII码，文件中使用了中文等非英语字符。
+解决方式：在Python源文件的最开始一行，加入一句：
+# coding=UTF-8（等号换为”:“也可以）
+或者
+# -- coding:UTF-8 --
+分享一个Py">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决SyntaxError-Non-ASCII character ‘\xe5′ in file">
+<meta property="og:url" content="http://iiccc.cc/2017/03/17/SyntaxError-Non-ASCII/index.html">
 <meta property="og:site_name" content="堆栈">
-<meta property="og:description" content="永远相信美好的事情即将发生">
+<meta property="og:description" content="问题：编写Python时，尝试使用中文字符出现：
+SyntaxError: Non-ASCII character ‘\xe5′ in file
+原因是Python的默认编码文件是用的ASCII码，文件中使用了中文等非英语字符。
+解决方式：在Python源文件的最开始一行，加入一句：
+# coding=UTF-8（等号换为”:“也可以）
+或者
+# -- coding:UTF-8 --
+分享一个Py">
+<meta property="og:image" content="http://img.blog.csdn.net/20170317122116079?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWF5dWtvMjAxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-03-17T04:34:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="堆栈">
-<meta name="twitter:description" content="永远相信美好的事情即将发生">
+<meta name="twitter:title" content="解决SyntaxError-Non-ASCII character ‘\xe5′ in file">
+<meta name="twitter:description" content="问题：编写Python时，尝试使用中文字符出现：
+SyntaxError: Non-ASCII character ‘\xe5′ in file
+原因是Python的默认编码文件是用的ASCII码，文件中使用了中文等非英语字符。
+解决方式：在Python源文件的最开始一行，加入一句：
+# coding=UTF-8（等号换为”:“也可以）
+或者
+# -- coding:UTF-8 --
+分享一个Py">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170317122116079?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWF5dWtvMjAxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
 
@@ -123,13 +147,13 @@
 
 
 
-  <link rel="canonical" href="http://iiccc.cc/"/>
+  <link rel="canonical" href="http://iiccc.cc/2017/03/17/SyntaxError-Non-ASCII/"/>
 
 
 
 
 
-  <title> 堆栈 </title>
+  <title> 解决SyntaxError-Non-ASCII character ‘\xe5′ in file | 堆栈 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,9 +178,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +261,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,10 +293,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/17/SyntaxError-Non-ASCII/" itemprop="url">
-                  解决SyntaxError-Non-ASCII character ‘\xe5′ in file
-                </a>
+                解决SyntaxError-Non-ASCII character ‘\xe5′ in file
               
             
           </h1>
@@ -335,9 +354,7 @@
       
 
       
-        
-          
-            <h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>编写Python时，尝试使用中文字符出现：</p>
+        <h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>编写Python时，尝试使用中文字符出现：</p>
 <p><strong>SyntaxError: Non-ASCII character ‘\xe5′ in file</strong></p>
 <p>原因是Python的默认编码文件是用的ASCII码，文件中使用了中文等非英语字符。</p>
 <h2 id="解决方式："><a href="#解决方式：" class="headerlink" title="解决方式："></a>解决方式：</h2><p>在Python源文件的最开始一行，加入一句：</p>
@@ -349,151 +366,36 @@
 <p>如何使用？</p>
 <p><img src="http://img.blog.csdn.net/20170317122116079?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbWF5dWtvMjAxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
       
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://iiccc.cc/2017/03/08/solve-cleanmymac/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hades">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="堆栈">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/08/solve-cleanmymac/" itemprop="url">
-                  解决卸载CleanMyMac后通知中心仍有通知的问题
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-08T22:07:09+08:00">
-                2017-03-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/08/solve-cleanmymac/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/08/solve-cleanmymac/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/wechatpay.png" alt="hades WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
       
-      
-
-      
-        
-          
-            <p>前几天安装了CleanMyMac 3，最后实在付不起激活的费用，于是就在应用程序中移到了废纸篓。</p>
-<p>今天打开通知中心看到仍然有这个软件的通知，最后删除了一些文件后解决了这个问题。</p>
-<p>第一步：删除/Applications/下的 CleanMyMac.app 程序</p>
-<p>第二步：删除~/Library/Application Support/文件夹下的所有CleanMyMac文件包含文件夹。</p>
-<p>第三步：删除~/Library/LaunchAgents/文件夹下的com.macpaw.CleanMyMac3.Scheduler.plist文件或关于CleanMyMac文件与文夹</p>
-<p>第四步：重启一下。</p>
-<p>再次打开通知中心，已经没有CleanMyMac的选项了。</p>
-<p>成功。</p>
-
-          
-        
       
     </div>
+  </div>
 
-    <div>
-      
-    </div>
 
-    <div>
       
     </div>
 
@@ -502,157 +404,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://iiccc.cc/2017/03/07/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hades">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="堆栈">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/08/solve-cleanmymac/" rel="next" title="解决卸载CleanMyMac后通知中心仍有通知的问题">
+                <i class="fa fa-chevron-left"></i> 解决卸载CleanMyMac后通知中心仍有通知的问题
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/03/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-07T17:29:11+08:00">
-                2017-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/07/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -660,6 +443,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/17/SyntaxError-Non-ASCII/"
+           data-title="解决SyntaxError-Non-ASCII character ‘\xe5′ in file" data-url="http://iiccc.cc/2017/03/17/SyntaxError-Non-ASCII/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -679,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -747,6 +547,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题："><span class="nav-number">1.</span> <span class="nav-text">问题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方式："><span class="nav-number">2.</span> <span class="nav-text">解决方式：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -852,6 +668,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
